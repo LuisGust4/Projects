@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Mondrian</title>
+  <style>
+    .real-cont {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      border: 20px;
+    }
+    html {
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px ;
+      background-color: #000;
+      gap: 9px;
+    }
+    .item {
+      width: 100%;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .white {
+      background-color:#F0F1EC;
+    }
+    .blue {
+      background-color: #004592;
+      border-bottom: 11px solid black;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629
+    }
+    .specialw {
+      grid-row: span 2;
+    }
+
+    .w3 {
+      grid-column: span 3;
+    }
+    .w2 {
+      grid-row: span 2;
+    }
+    .w4 {
+      grid-area: 2/2/4/4;
+    }
+    .tx_container {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .txt {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      display: inline-block;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="txt"><h1>Esta pintura foi completamente feita utilizando grid!</h1></div>
+   <div class="real-cont">
+    <div class="container painting">
+      <div class="item red"></div>
+      <div class="item white w3"></div>
+      <div class="item white w2"></div>
+      <div class="item white w4"></div>
+      <div class="item blue"></div>
+      <div class="item white specialw"></div>
+      <div class="item white"></div>
+      <div class="item yellow"></div>
+      <div class="item black"></div>
+    </div>
+  </div>
+</body>
+
+</html>
